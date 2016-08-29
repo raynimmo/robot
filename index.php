@@ -406,7 +406,7 @@ if($_GET['panels']=='open' || $_POST['panels']=='open'){
 
             <fieldset>
                 <legend>Toy Robot Simulator
-                    <button onclick="toggleChart();" type="button" name="viewdisplay" class="btn view"><?php if($panel){ print 'Hide';}else{ print 'Show'; }?> Graph</button>
+                    <button type="button" id="viewdisplay" class="btn view"><?php if($panel){ print 'Hide';}else{ print 'Show'; }?> Graph</button>
                 </legend>
 
                 <div class="control-group">
@@ -477,7 +477,6 @@ if($_GET['panels']=='open' || $_POST['panels']=='open'){
     </div> <!-- /.wrapper -->
 </body>
 </html>
-
 <?php
 } // end/else
 ?>

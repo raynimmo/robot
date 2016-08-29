@@ -6,6 +6,9 @@
 $(function(){
 	console.log('onload init');
 
+	$('#viewdisplay').click(function(){
+		toggleChart();
+	});
 	// Reload page on grid size select change
 	$('select#gridsize').change(function(e){
     	select_val = $("select#gridsize option:selected").attr('value');
@@ -15,9 +18,8 @@ $(function(){
 
 
 // Simple preset txt strings to use for testing
-function presets(type="default"){
+function presets(type){
 	console.log("load preset: " + type);
-
 	switch(type){
 		case "p1" :
 			txt = "PLACE 4,3,NORTH\nMOVE\nMOVE\nMOVE\nLEFT\nMOVE\nREPORT";
